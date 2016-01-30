@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.javaughn.basics" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".Learners"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Addition"
+            android:label="@string/title_activity_addition"
+            android:parentActivityName=".Learners" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.javaughn.basics.Learners" />
+        </activity>
+        <activity
+            android:name=".Division"
+            android:label="@string/title_activity_division"
+            android:parentActivityName=".Learners" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.javaughn.basics.Learners" />
+        </activity>
+        <activity
+            android:name=".Multiplication"
+            android:label="@string/title_activity_multiplication"
+            android:parentActivityName=".Learners" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.javaughn.basics.Learners" />
+        </activity>
+        <activity
+            android:name=".Subtraction"
+            android:label="@string/title_activity_subtraction"
+            android:parentActivityName=".Learners" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.javaughn.basics.Learners" />
+        </activity>
+    </application>
+
+</manifest>
